@@ -1,0 +1,373 @@
+/* basic  Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+h1{
+    
+    text-shadow: #000000;
+    outline: #2d2b2b;
+  background: -moz-radial-gradient(red,pink,orange,yellow);
+}
+body {
+    /* background: url('https://d35aaqx5ub95lt.cloudfront.net/images/splash/lottie/229d5f88cc9df2eb0b68f39466500911.svg') no-repeat center center fixed; Add background image */
+    background-size:cover;
+    background-color: #192841;
+    line-height: 1.5;
+}
+
+/*  blur background */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 100;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 11, 11, 0.5); 
+    z-index: -1; 
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: transparent;
+    color: #fff;
+    padding: 1rem;
+    backdrop-filter: blur(10px); 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+}
+
+.navbar .navdiv {
+    display: flex;
+    align-items: center;
+   
+    justify-content: space-evenly; 
+}
+
+.navbar .logo {
+   
+    margin-right: auto;
+}
+
+.navbar .logo img {
+    width: 160px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul h1 {
+    color: #0dc8a3;
+    font-size: 24px;
+    
+    margin: 0;
+}
+
+.navbar ul li {
+    margin-left: 80px; 
+}
+
+.navbar ul li a {
+    color: #c8c8c8;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.navbar ul li a:hover {
+    background-color: #0dc8a3; 
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Main Content Styles */
+main {
+    padding: 2rem;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    flex-wrap: wrap;
+    position: relative;
+    /* height: 300px; */
+   
+
+}
+
+main div {
+    
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    position: relative;
+    bottom: 800px;
+    width: 1250px;
+    justify-content: space-evenly;
+    gap: 3px;
+}
+
+main div:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); 
+}
+
+main div h3 {
+    color: #0dc8a3;
+    margin-bottom: 1rem;
+}
+
+main div p {
+    color: #2d2b2b;
+    font-size: 15px;
+}
+
+
+@media (max-width: 768px) {
+    .navbar .navdiv {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .navbar ul h1,
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .navbar ul li a {
+        padding: 10px; 
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
+video{
+    position: relative;
+   right: 182px;
+    bottom: 100px;
+    z-index: -1;
+    width: 1671px;
+    overflow: hidden;
+}
+.about{
+    background-color: #c8c8c8;
+}
+.about{
+    background-color: #333;
+    
+}
+.about h4{
+    font-size: 24px;
+    color: #0dc8a3;
+    position:relative;
+    left: 10px;
+    top: 20px;
+    margin: 20px;
+}
+.about .para{
+    position: relative;
+    color: white;
+    width: 310px;
+    text-align: left;
+    top: 40px;
+    left: 20px;
+}
+ .contacts {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    position:relative ;
+    left: 500px;
+    justify-content: space-between;
+    bottom:90px;
+    gap: 40px;
+}
+.bmi{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    position:relative ;
+    left: 600px;
+    justify-content: space-between;
+    bottom:90px;
+    gap: 40px;
+}
+.about_section{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    position:relative ;
+    left: 335px;
+    justify-content: space-between;
+    bottom:50px;
+    }
+.about ul{
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-content: center;
+    gap: 12px;
+    right: 10px;
+    bottom: 180px;
+    margin: 20px;
+    
+}
+.about ul img{
+    background-color: gray;
+    border-radius: 20px;
+}
+.playstore{
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 20px;
+    bottom: 200px;
+}
+.apple{
+    position: relative;
+    display: flex;
+    justify-content: right;
+    margin: 20px;
+    bottom: 200px;
+}
+.join{display: flex;
+    position: relative;
+    bottom: 1176px;
+    left: 632px;
+    text-decoration: none;
+    border: rgb(146, 82, 82);
+    border-color: white;
+    width: 100px;
+    height: 60px;
+    background-color: grey;
+    padding: 20px;
+    border-radius: 30px;
+    color: #fff;
+    
+}
+.join:hover{
+    background-color: #0dc8a3;
+    box-shadow: #b4afaf 4px 2px;
+    transition: 0.3s ease;
+}
+footer{
+    position: relative;
+    height: 1px;
+}
+#heading{
+    display: inline-block;
+    width: 50px;
+    font-size: 72px;
+    position: relative;
+    left: 182px;
+    text-shadow: #a3a8a5 2px 5px;
+    bottom: 831px;
+}
+
+ .Workout{
+    text-align: right;
+    position: relative;
+    height: 150px;
+    left: 551px;
+     width:500px 
+    
+    
+}
+.Diet{position: relative;
+    text-align: right;
+    height: 150px;
+    left: 595px;
+    width:500px;
+    bottom:990px;
+}
+.challenges{
+    position: relative;
+    text-align: right;
+    height: 150px;
+    left: 598px;
+    width:500px;
+    bottom: 1290px; 
+}
+.Progress{
+    position: relative;
+height: 150px;
+left: 183px;
+width:593px ;
+bottom:854px;
+}
+.Content{
+    position: relative;
+    height: 150px;
+    left: 207px;
+    width:500px;
+    bottom: 1241px; 
+}
+.rewards{
+    position: relative;
+    height: 150px;
+    left: 241px;
+    width:500px ;
+    bottom:1350px;
+}
+#img1{
+    position: relative;
+    width: 300px;
+    bottom: 1011px;
+    left: 200px;
+}
+#img2{
+    position: relative;
+    width: 300px;
+    bottom: 1139px;
+    left: 830px;
+}
+#img3{
+    position: relative;
+    width: 300px;
+    bottom: 1297px;
+    left: 203px;
+}
+#img4{
+    position: relative;
+    width: 300px;
+    bottom: 1065px;
+    z-index: 20;
+    left: 240px;
+}
+#img5{
+    position: relative;
+    width: 300px;
+    bottom: 1914px;
+    left: 794px;
+}
+#img6{
+    position: relative;
+    width: 300px;
+    bottom: 1654px;
+    left: 800px;
+}
+#back{
+    position: relative;
+    bottom: 1300px;
+    z-index: 0;
+    right: 31px;
+    width: 1529px;
+}

@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgb(44, 44, 44);
+}
+.navbar {
+    background-color: transparent;
+    color: #fff;
+    padding: 1rem;
+    backdrop-filter: blur(10px); 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+}
+
+.navbar .navdiv {
+    display: flex;
+    align-items: center;
+   
+    justify-content: space-evenly; 
+}
+
+.navbar .logo {
+   position: relative;
+    margin-right: auto;
+    
+}
+
+.navbar .logo img {
+    width: 160px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  
+
+}
+
+.navbar ul h1 {
+    color: #0dc8a3;
+    font-size: 24px;
+    position:relative;
+    right:150px;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin-left: 80px; 
+}
+
+.navbar ul li a {
+    color: #c8c8c8;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.navbar ul li a:hover {
+    background-color: #0dc8a3; 
+    color: #fff;
+    border-radius: 5px;
+}
+.heading{
+    font-size: 20px;
+    position: relative;
+    margin: 20px;
+    text-decoration: bold;
+    color: bisque;
+    padding: 20px;
+}
+.outer{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+    -6px -6px 10px -1px rgba(255,255,255,0.7)
+                
+}
+.inner{
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+    inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+    -0.5px 0.5px 0px rgba(0,0,0,0.15),
+    0px 12px 10px -10px rgba(0,0,0,0.05);
+                
+}
+#id{
+    font-weight: 600px;
+    color: #7e7676;
+}
+.bar{
+    position:relative;
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    justify-content: space-evenly;
+
+}
+.sub_head{
+    font-size: 45px;
+    font-weight: 10px;
+    color: bisque;
+    margin: 20px;
+    padding: 20px;
+}
+.work{
+    font-size: large;
+    height: 1500px;
+    width: 1500px;
+    position: relative;
+    left: 450px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    
+}
+.ex1{
+    position:relative;
+background-color: beige;
+width: 700px;
+height: 201px;
+top: 20px;
+border-radius: 30px;
+}
+.ex1 p{
+    position: relative;
+    top: 85px;
+    left: 86px;
+    font-size: 25px;
+    font-style: bold;
+}
+.ex2{
+    background-color: beige;
+    width: 700px;
+    height: 201px;
+    border-radius: 30px;
+}
+.ex2 p{
+    position: relative;
+    top: 85px;
+    left: 38px;
+}
+.ex3{
+    background-color: beige;
+    width: 700px;
+    height: 201px;
+    border-radius: 30px;
+}
+.ex3 p{
+    position: relative;
+    top: 85px;
+    left: 38px;
+}
+.ex4{background-color: beige;
+    width: 700px;
+    height: 201px;
+    border-radius: 30px;
+}
+.ex4 p{
+    position: relative;
+    top: 85px;
+    left: 38px;
+}
+video{
+    position: relative;
+    left: 365px;
+    bottom: 5px;
+    width: 300px;
+}
